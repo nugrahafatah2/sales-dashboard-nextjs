@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Professional Sales Dashboard - Next.js 15
 
-## Getting Started
+This project is an interactive Sales Dashboard built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**. The project architecture follows **Atomic Design** principles to ensure reusable, scalable, and maintainable frontend components.
 
-First, run the development server:
+## 🚀 Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Multiple Chart Types**: Support for **Bar**, **Line**, and **Pie** charts using the `recharts` library.
+- **Dynamic API Integration**: Fetches real-time sales data asynchronously via Next.js Route Handlers (`/api/sales`).
+- **Custom Sales Threshold**: An interactive filter allowing users to set a sales goal (threshold) with a dynamic reference line on the charts.
+- **Atomic Design Architecture**: Components are strictly divided into Atoms, Molecules, and Organisms for better modularity.
+- **Next.js 15 Optimizations**: Uses the latest App Router features and handles Client-Side Rendering (CSR) for visualization components to prevent hydration errors.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Project Architecture (Atomic Design)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project is organized into the following layers:
+- **Atoms**: Smallest functional units (e.g., `Input.tsx`, `Label.tsx`).
+- **Molecules**: Groups of atoms working together (e.g., `ThresholdInput.tsx`).
+- **Organisms**: Complex, self-contained UI sections (e.g., `SalesChart.tsx` which includes the chart logic and type switcher).
+- **API Layer**: Backend route handlers providing mock data in a real-world API format.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Tech Stack
 
-## Learn More
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Data Visualization**: Recharts
+- **State Management**: React Hooks (`useState`, `useEffect`)
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Installation & Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow these steps to run the project locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the Repository**
+   ```bash
+   git clone [https://github.com/USERNAME/REPO_NAME.git](https://github.com/USERNAME/REPO_NAME.git)
+   cd REPO_NAME
